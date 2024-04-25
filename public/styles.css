@@ -1,0 +1,47 @@
+body{
+    font-size: 120%;
+    background-color: #1c5d5a;
+    font-family: 'Merriweather', serif;
+}
+.container{
+    background-color: white;
+    padding:5%;
+    width:90%;
+    border-radius: 25px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-content{
+    flex:1;
+}
+.side-links{
+    flex:1;
+    position: relative;
+}
+
+
+h1{
+    color:#221b1b;
+    text-align: center;
+}
+.top-bar {
+    background-color: #EBCFC4;
+    color: rgb(4, 3, 3);
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 25px;
+    /* filter: drop-shadow(0.15rem 0.15rem 0.4rem rgba(86, 46, 46, 0.406)) */
+}
+
+.top-bar a {
+    color: rgb(24, 21, 21);
+   
+    margin: 0 20px;
+}
+
+.top-bar a:hover { 
+    text-decoration: underline;
+    color: rgb(84, 51, 51);
+}
