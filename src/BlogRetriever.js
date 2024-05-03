@@ -15,7 +15,7 @@ function BlogRetriever(){
       
         
           try{
-            const response = await Axios.get('http://pi.samthings.xyz/api/blogs/'+post, {responseType: Blob});
+            const response = await Axios.get('https://pi.samthings.xyz/api/blogs/'+post, {responseType: Blob});
           
            console.log(response.data);
            setData(response.data)

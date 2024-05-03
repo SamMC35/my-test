@@ -11,7 +11,7 @@ function RecentPosts(){
       
         if(data == null){
           try{
-            const response = await fetch('http://pi.samthings.xyz/api/recentPosts');
+            const response = await fetch('https://pi.samthings.xyz/api/recentPosts');
             if(!response.ok){
                 console.error('Error in loading posts: ');
             }
