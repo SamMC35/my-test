@@ -9,7 +9,6 @@ function Layout(){
                 <Link to="/">Home</Link>
                 <Link to="articles">Articles</Link>
                 <Link to="about">About This Page</Link>
-                
             </div>
         <Outlet />
         </div></>

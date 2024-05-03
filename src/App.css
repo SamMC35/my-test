@@ -14,10 +14,14 @@ body{
   box-shadow: #4C587F;
   filter: drop-shadow(0.75rem 0.75rem 0.6rem rgba(0, 0, 0, 0.275));
   font-size: 1.2em;
+  
 }
 .content{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 120px;
+  padding-right: 120px;
+  
 }
 .post-content{
   flex:1;
@@ -57,4 +61,5 @@ article {
   font-size: 0.40 em;
   line-height: 1.3 em;
   margin-bottom: 15px; /* Example margin, adjust as needed */
+  
 }
