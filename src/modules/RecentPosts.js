@@ -12,6 +12,7 @@ function RecentPosts(){
         if(data == null){
           try{
             const response = await fetch('https://pi.samthings.xyz/api/recentPosts');
+            // const response = await fetch('http://localhost:3001/recentPosts');
             if(!response.ok){
                 console.error('Error in loading posts: ');
             }

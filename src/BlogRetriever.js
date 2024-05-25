@@ -16,8 +16,10 @@ function BlogRetriever(){
         
           try{
             const response = await Axios.get('https://pi.samthings.xyz/api/blogs/'+post, {responseType: Blob});
+            // const response = await Axios.get('http://localhost:3001/blogs/'+post, {responseType: Blob});
           
            console.log(response.data);
+          //  const markdownContent = response.data.replace(/\n/g, '<br>\n');
            setData(response.data)
 
         }catch(error){
@@ -28,8 +30,10 @@ function BlogRetriever(){
       // const result = remark().use(remarkReact).processSync(data).result;
 
     // console.log(data)
+
+  
    
-    return (<div><div className="content"><ReactMarkdown>{data}</ReactMarkdown></div></div>)
+    return (<div dangerouslySetInnerHTML={{__html: data}} />)
 }
 
 export default BlogRetriever;
